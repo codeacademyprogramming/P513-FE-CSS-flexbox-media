@@ -1,0 +1,128 @@
+/* @media only screen and (min-width: 500px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    background-color: purple;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  body {
+    background-color: pink;
+  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  border: 1px solid black;
+  margin: 30px auto;
+  height: 400px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  margin-left: 16px;
+  margin-right: 16px;
+  width: calc((100% - 32px * 12) / 12);
+  border: 1px solid black;
+}
+
+.wrapper {
+  font-size: 40px;
+  width: 100%;
+}
+
+/* @media only screen and (min-width: 1200px) {
+  .col {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: calc((100% - 32px * 12) / 12);
+    border: 1px solid black;
+  }
+} */
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-4 {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: calc((100% - 32px * 3) / 3);
+    border: 1px solid black;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .col-md-6 {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: calc((100% - 32px * 2) / 2);
+    border: 1px solid black;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .col-sm-1 {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: calc((100% - 32px * 12) / 12);
+    border: 1px solid black;
+  }
+
+  .col-sm-2 {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: calc((100% - 32px * 6) / 6);
+    border: 1px solid black;
+  }
+
+  .col-sm-3 {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: calc((100% - 32px * 4) / 4);
+    border: 1px solid black;
+  }
+
+  .col-sm-4 {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: calc((100% - 32px * 3) / 3);
+    border: 1px solid black;
+  }
+
+  .col-sm-12 {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: calc(100% - 32px);
+    border: 1px solid black;
+  }
+
+  /* 
+    col-sm-5
+    col-sm-6
+    col-sm-7
+    col-sm-8
+    col-sm-9
+    col-sm-10
+    col-sm-11
+    col-sm-12
+  */
+}
+
+@media only screen and (min-width: 600px) {
+  section {
+    display: none;
+  }
+}
